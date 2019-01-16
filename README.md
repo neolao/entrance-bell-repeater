@@ -16,6 +16,7 @@ Sensor
 ------
 
 ```bash
+sudo echo "10.0.1.10" > /boot/buzz-ip.txt
 sudo ln -s $(pwd)/sensor.service /etc/systemd/system/sensor.service
 sudo systemctl enable sensor.service
 sudo systemctl start sensor.service
