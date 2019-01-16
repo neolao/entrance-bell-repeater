@@ -21,3 +21,17 @@ sudo ln -s $(pwd)/sensor.service /etc/systemd/system/sensor.service
 sudo systemctl enable sensor.service
 sudo systemctl start sensor.service
 ```
+
+Change WIFI
+-----------
+
+Create the file `/boot/wpa_supplicant.conf` and reboot:
+
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+  ssid="myssid"
+  psk="mypassword"
+}
+```
