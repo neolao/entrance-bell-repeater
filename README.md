@@ -2,6 +2,7 @@ Entrance bell repeater
 ======================
 
 ![Sketch](./sketch.png)
+![Photo](./photo.jpg)
 
 Buzzer
 ------
