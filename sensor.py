@@ -5,7 +5,8 @@ import urllib2
 
 SensorPin = 15
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(SensorPin, GPIO.IN)
+
+GPIO.setup(SensorPin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 file = open("/boot/buzz-ip.txt", "r")
 buzzIp = file.read().strip()
