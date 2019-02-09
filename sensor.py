@@ -34,7 +34,7 @@ def callback(channel):
 
   print(str(lastCallback) + " : " + str(consecutiveCallback))
 
-GPIO.add_event_detect(SensorPin, GPIO.BOTH, callback, bouncetime=300)
+GPIO.add_event_detect(SensorPin, GPIO.BOTH, callback, bouncetime=200)
 
 while True:
         time.sleep(1)
